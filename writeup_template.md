@@ -29,7 +29,9 @@ Result of HoughLines before grouping:
 
 An issue, which got ironed out after choosing the right combination of parameters and thresholds, is that the grouping and averaging sometimes results in lines that are off the target, and the result can vary from frame to frame, resulting in "shaky" lines.
 
-Another general issue is if a vertical line is detected in the middle of the lane, e.g. a slab of concrete that has different color than the road.  It can be mistakenly identified as a lane divider.
+Another issue is when the lane line is curved, the grouping and averaging results in a line that is off, as can be seen in the challenge video.  I have not identified the cause of this.
+
+One other general issue is if a vertical line is detected in the middle of the lane, e.g. a slab of concrete that has different color than the road.  It can be mistakenly identified as a lane divider.
 
 ####3. Suggest possible improvements to your pipeline
 
